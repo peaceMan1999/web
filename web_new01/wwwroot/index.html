@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>简洁美观的前端页面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000033;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      padding: 20px;
+      background-color: #D3D3D3;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #555;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 80%;
+      /* 或 width: 300px; */
+      margin-bottom: 10px;
+    }
+
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>--- 加减乘除 ---</h1>
+
+    <form action="/test_cgi" method="GET">
+      <h3>x: <input type="text" name="data_x" value="0"></h3>
+      <h3>y: <input type="text" name="data_y" value="1"></h3>
+
+      <br>
+      <input type="submit" value="提交">
+    </form>
+  </div>
+</body>
+
+</html>
